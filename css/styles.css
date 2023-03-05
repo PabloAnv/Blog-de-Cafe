@@ -153,3 +153,49 @@ img {
         column-gap: 3rem;
     }
 }
+
+<div class="nuestro__contenido">
+            <article class="article">
+                <img src="img/blog1.jpg" alt="Imagen de cafe">
+                <h3>Tipos de Grano de Café</h3>
+                <p>Nulla euismod auctor pulvinar. Suspendisse placerat ultrices elit, auctor lacinia augue. In tristique
+                    molestie arcu. In aliquet nisi eu lacinia fermentum. Etiam ut ligula id risus tristique scelerisque.
+                    Sed
+                    id interdum magna, vestibulum porttitor est.</p>
+                <a href="entrada.html" class="boton">Leer entrada</a>
+            </article>
+        </div>
+        <div class="nuestro__contenido">
+            <h3>Nuestro Blog</h3>
+            <article class="article">
+                <img src="img/blog1.jpg" alt="Imagen de cafe">
+                <h3>Tipos de Grano de Café</h3>
+                <p>Nulla euismod auctor pulvinar. Suspendisse placerat ultrices elit, auctor lacinia augue. In tristique
+                    molestie arcu. In aliquet nisi eu lacinia fermentum. Etiam ut ligula id risus tristique scelerisque.
+                    Sed
+                    id interdum magna, vestibulum porttitor est.</p>
+                <a href="entrada.html" class="boton">Leer entrada</a>
+            </article>
+        </div>
+        <h3>Nuestros cursos y talleres</h3>
+        <aside class="nuestro__sidebar">
+            <h4>Técnicas de extraccion de café</h4>
+            <p>Precio: Gratis</p>
+            <p>Cupo: 20</p>
+            <button class="boton">Más Información</button>
+            <h4>4 Recetas de Café para principiantes</h4>
+            <p>Precio: Gratis</p>
+            <p>Cupo: 20</p>
+            <button class="boton">Más Información</button>
+        </aside>
+        <aside class="nuestro__sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+            <h4>Técnicas de extraccion de café</h4>
+            <p>Precio: Gratis</p>
+            <p>Cupo: 20</p>
+            <button class="boton">Más Información</button>
+            <h4>4 Recetas de Café para principiantes</h4>
+            <p>Precio: Gratis</p>
+            <p>Cupo: 20</p>
+            <button class="boton">Más Información</button>
+        </aside>
