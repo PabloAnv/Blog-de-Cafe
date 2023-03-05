@@ -3,6 +3,7 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafo: 'Open Sans', sans-serif;
 
+    --claro: #e1e1e1;
     --primario: #784D3C;
     --blanco: #FFF;
     --negro: #000;
@@ -118,18 +119,54 @@ img {
 /**Nuestro Blog**/
 
 .boton{
+    display: block;
+    text-align: center;
+    font-family: var(--fuenteHeading);
     border: none;
-    background-color: var(--negro);
     color: var(--blanco);
     text-transform: uppercase;
-    padding: 1.5rem;
+    padding: 1rem 3rem;
     text-decoration: none;
     cursor: pointer;
     font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .nuestro__sidebar{
     line-height: 3.5rem;
+}
+
+.contenido{
+    border-bottom: 1px solid var(--claro);
+    margin-bottom: 2rem;
+}
+
+.contenido:last-of-type{
+    border: none;
+    margin-bottom: unset;
+}
+
+.boton--cafe{
+    background-color: var(--primario);
+}
+
+.boton--negro{
+    background-color: var(--negro);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widgetcurso{
+    border-bottom: 0.5rem solid var(--claro);
+    margin-bottom: 2rem;
+}
+
+.widgetcurso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -152,50 +189,8 @@ img {
         grid-template-columns: 3fr 2fr;
         column-gap: 3rem;
     }
-}
 
-<div class="nuestro__contenido">
-            <article class="article">
-                <img src="img/blog1.jpg" alt="Imagen de cafe">
-                <h3>Tipos de Grano de Café</h3>
-                <p>Nulla euismod auctor pulvinar. Suspendisse placerat ultrices elit, auctor lacinia augue. In tristique
-                    molestie arcu. In aliquet nisi eu lacinia fermentum. Etiam ut ligula id risus tristique scelerisque.
-                    Sed
-                    id interdum magna, vestibulum porttitor est.</p>
-                <a href="entrada.html" class="boton">Leer entrada</a>
-            </article>
-        </div>
-        <div class="nuestro__contenido">
-            <h3>Nuestro Blog</h3>
-            <article class="article">
-                <img src="img/blog1.jpg" alt="Imagen de cafe">
-                <h3>Tipos de Grano de Café</h3>
-                <p>Nulla euismod auctor pulvinar. Suspendisse placerat ultrices elit, auctor lacinia augue. In tristique
-                    molestie arcu. In aliquet nisi eu lacinia fermentum. Etiam ut ligula id risus tristique scelerisque.
-                    Sed
-                    id interdum magna, vestibulum porttitor est.</p>
-                <a href="entrada.html" class="boton">Leer entrada</a>
-            </article>
-        </div>
-        <h3>Nuestros cursos y talleres</h3>
-        <aside class="nuestro__sidebar">
-            <h4>Técnicas de extraccion de café</h4>
-            <p>Precio: Gratis</p>
-            <p>Cupo: 20</p>
-            <button class="boton">Más Información</button>
-            <h4>4 Recetas de Café para principiantes</h4>
-            <p>Precio: Gratis</p>
-            <p>Cupo: 20</p>
-            <button class="boton">Más Información</button>
-        </aside>
-        <aside class="nuestro__sidebar">
-            <h3>Nuestros cursos y talleres</h3>
-            <h4>Técnicas de extraccion de café</h4>
-            <p>Precio: Gratis</p>
-            <p>Cupo: 20</p>
-            <button class="boton">Más Información</button>
-            <h4>4 Recetas de Café para principiantes</h4>
-            <p>Precio: Gratis</p>
-            <p>Cupo: 20</p>
-            <button class="boton">Más Información</button>
-        </aside>
+    .boton{
+        display: inline-block;
+    }
+}
