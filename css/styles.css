@@ -29,7 +29,7 @@ body {
 /**Globales**/
 
 .contenedor {
-    width: min( 90%, 120rem);
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -105,20 +105,20 @@ img {
     font-size: 1.8rem;
 }
 
-.header__texto{
+.header__texto {
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
     line-height: 5rem;
 }
 
-.blog{
+.blog {
     font-weight: 400;
 }
 
 /**Nuestro Blog**/
 
-.boton{
+.boton {
     display: block;
     text-align: center;
     font-family: var(--fuenteHeading);
@@ -133,47 +133,57 @@ img {
     margin-bottom: 2rem;
 }
 
-.nuestro__sidebar{
+.nuestro__sidebar {
     line-height: 3.5rem;
 }
 
-.contenido{
+.contenido {
     border-bottom: 1px solid var(--claro);
     margin-bottom: 2rem;
 }
 
-.contenido:last-of-type{
+.contenido:last-of-type {
     border: none;
     margin-bottom: unset;
 }
 
-.boton--cafe{
+.boton--cafe {
     background-color: var(--primario);
 }
 
-.boton--negro{
+.boton--negro {
     background-color: var(--negro);
 }
 
-.cursos{
+.cursos {
     list-style: none;
 }
 
-.widgetcurso{
+.widgetcurso {
     border-bottom: 0.5rem solid var(--claro);
     margin-bottom: 2rem;
 }
 
-.widgetcurso:last-of-type{
+.widgetcurso:last-of-type {
     border-bottom: none;
     margin-bottom: 0;
 }
 
-.footer{
+/**Pagina Nosotros**/
+
+.sobre-nosotros__parrafo{
+    line-height: 1.5;
+    font-family: var(--fuenteParrafo);
+}
+
+/**Footer**/
+
+.footer {
     background-color: var(--negro);
     margin-top: 5rem;
 }
-.footer__flex{
+
+.footer__flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,21 +196,27 @@ img {
         flex-direction: row;
     }
 
-    .navegador{
+    .navegador {
         display: flex;
     }
 
-    .header__texto{
+    .header__texto {
         margin-top: 15rem;
     }
 
-    .nuestro{
+    .nuestro {
         display: grid;
         grid-template-columns: 3fr 2fr;
         column-gap: 3rem;
     }
 
-    .boton{
+    .boton {
         display: inline-block;
+    }
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
     }
 }
