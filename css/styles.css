@@ -29,8 +29,7 @@ body {
 /**Globales**/
 
 .contenedor {
-    max-width: 120rem;
-    width: 90%;
+    width: min( 90%, 120rem);
     margin: 0 auto;
 }
 
@@ -168,6 +167,16 @@ img {
 .widgetcurso:last-of-type{
     border-bottom: none;
     margin-bottom: 0;
+}
+
+.footer{
+    background-color: var(--negro);
+    margin-top: 5rem;
+}
+.footer__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media (min-width: 768px) {
