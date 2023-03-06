@@ -155,7 +155,7 @@ img {
     background-color: var(--negro);
 }
 
-.cursos {
+.lista {
     list-style: none;
 }
 
@@ -175,6 +175,26 @@ img {
     line-height: 1.5;
     font-family: var(--fuenteParrafo);
 }
+
+/**Pagina curso**/
+
+.cursos{
+    margin-bottom: 5rem;
+    border-bottom: 1px solid var(--claro);
+    padding-bottom: 2rem;
+}
+
+.cursos:last-of-type{
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+}
+
+.cursos__lista{
+   font-family: var(--fuenteParrafo);
+   line-height: 2;
+}
+
 
 /**Footer**/
 
@@ -218,5 +238,11 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+    }
+    
+    .cursos{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
     }
 }
