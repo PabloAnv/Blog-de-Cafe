@@ -195,6 +195,13 @@ img {
    line-height: 2;
 }
 
+/**Entrada de Blog**/
+
+.entrada-de-blog{
+    font-family: var(--fuenteParrafo);
+    line-height: 1.5;
+    font-size: 2rem;
+}
 
 /**Footer**/
 
