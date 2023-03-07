@@ -79,6 +79,10 @@ img {
     text-align: center;
 }
 
+.wd-100{
+    width: 100%;
+}
+
 /**Header**/
 
 .header {
@@ -216,12 +220,15 @@ img {
 
 .formulario {  
     width: 95%;
-    margin: 0 auto;
+    margin: -5rem auto 0 auto;
+    background-color: var(--blanco);
+    padding: 5rem;
 }
 
 .formulario__fieldset{
     padding: 0;
     margin: 0;
+    border: none;
 }
 
 .formulario__campo {
@@ -252,6 +259,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/**¡¡¡BOTON SUPER ESPECIAL!!!**/
+
+.boton--especial{
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -293,13 +306,19 @@ img {
 
     .formulario__campo {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         gap: 3rem;
     }
 
+    .formulario__dato{
+        flex: 0 0 9rem;
+    }
     .formulario__entrada {
-        width: 90%;
+        flex: 1;
+    }
+
+    .boton--especial{
+        width: unset;
     }
     
 }
