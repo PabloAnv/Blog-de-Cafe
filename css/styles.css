@@ -171,36 +171,74 @@ img {
 
 /**Pagina Nosotros**/
 
-.sobre-nosotros__parrafo{
+.sobre-nosotros__parrafo {
     line-height: 1.5;
     font-family: var(--fuenteParrafo);
 }
 
 /**Pagina curso**/
 
-.cursos{
+.cursos {
     margin-bottom: 5rem;
     border-bottom: 1px solid var(--claro);
     padding-bottom: 2rem;
 }
 
-.cursos:last-of-type{
+.cursos:last-of-type {
     margin-bottom: 0;
     border: none;
     padding: 0;
 }
 
-.cursos__lista{
-   font-family: var(--fuenteParrafo);
-   line-height: 2;
+.cursos__lista {
+    font-family: var(--fuenteParrafo);
+    line-height: 2;
 }
 
 /**Entrada de Blog**/
 
-.entrada-de-blog{
+.entrada-de-blog {
     font-family: var(--fuenteParrafo);
     line-height: 1.5;
     font-size: 2rem;
+}
+
+/**Contacto**/
+
+.contacto__imagen {
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+
+}
+
+.formulario {  
+    width: 95%;
+    margin: 0 auto;
+}
+
+.formulario__fieldset{
+    padding: 0;
+    margin: 0;
+}
+
+.formulario__campo {
+    display: block;
+    margin: 2rem 0;
+}
+
+.formulario__dato {
+    font-family: var(--fuenteParrafo);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.formulario__entrada {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--claro);
 }
 
 /**Footer**/
@@ -246,10 +284,22 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-    
-    .cursos{
+
+    .cursos {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 3rem;
     }
+
+    .formulario__campo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .formulario__entrada {
+        width: 90%;
+    }
+    
 }
